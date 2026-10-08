@@ -1,14 +1,14 @@
 {
   "$schema": "https://vercel.sh",
   "functions": {
-    "api/*.php": {
+    "proxy.php": {
       "runtime": "vercel-php@0.9.0"
     }
   },
   "routes": [
     { 
       "src": "/proxy", 
-      "dest": "/api/proxy.php" 
+      "dest": "/proxy.php" 
     }
   ]
 }
